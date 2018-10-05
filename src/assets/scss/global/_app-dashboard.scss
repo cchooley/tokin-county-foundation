@@ -145,3 +145,13 @@ $app-dashboard-sidebar-width: $off-canvas-width;
 .slide {
   margin: 40px;
 }
+
+#merch, #specials, #about {
+  // Only affects medium screens and larger
+  @include breakpoint(large down) {
+    // All CSS in here goes inside the media query
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
