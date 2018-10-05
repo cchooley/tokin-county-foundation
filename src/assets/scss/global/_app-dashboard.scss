@@ -155,3 +155,19 @@ $app-dashboard-sidebar-width: $off-canvas-width;
     justify-content: center;
   }
 }
+
+h2 {
+  background: black;
+  color: white;
+  padding: 2vmin;
+  margin: 2vmin;
+  text-align: center;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 1vh;
+  margin: 2vh;
+  font-size: small
+}

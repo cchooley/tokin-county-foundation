@@ -22,11 +22,17 @@ PATHS:
   # Paths to static assets that aren't images, CSS, or JavaScript
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{img,js,scss}/**/*"
+    - "!src/assets/{img,js,scss,fonts}/**/*"
+  fonts:
+    - "src/assets/fonts/*"
+    - "bower_components/font-awesome/fonts/*"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"
     - "node_modules/motion-ui/src"
+    - "bower_components/foundation-sites/scss"
+    - "bower_components/motion-ui/src"
+    - "bower_components/font-awesome/scss"
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
