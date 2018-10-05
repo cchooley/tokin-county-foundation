@@ -3,6 +3,25 @@ import whatInput from 'what-input';
 
 window.$ = $;
 
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelectorAll('#map').length > 0) {
+    var js_file = document.createElement('script');
+    js_file.type = 'text/javascript';
+    js_file.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGhip0kEAil0pnIgVUOiqgEPAdHH07cE&callback=initMap';
+    document.getElementsByTagName('head')[0].appendChild(js_file);
+  }
+});
+
+var map;
+
+function initMap() {
+  var mapProp = {
+    center: new google.maps.LatLng(51.508742, -0.120850),
+    zoom: 5,
+  };
+  var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+
 import Foundation from 'foundation-sites';
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
