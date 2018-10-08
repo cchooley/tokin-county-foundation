@@ -171,7 +171,9 @@ footer {
   color: white;
   padding: 1vh;
   margin: 2vh;
-  font-size: small
+  font-size: small;
+  display: flex;
+  flex-flow: row;
 }
 
 .card {
@@ -184,3 +186,13 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+.small {
+  font-size: smaller;
+}
+
+.aboutBox {
+  display: flex;
+  flex-flow: row;
+}
+// 5B8A3C, 979694, 98E6B4, black, white

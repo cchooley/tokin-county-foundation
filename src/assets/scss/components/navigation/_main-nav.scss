@@ -6,3 +6,25 @@ $app-dashboard-top-nav-height: rem-calc(55);
   flex: 0 0 $app-dashboard-top-nav-height;
 }
 
+.topNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5vmin;
+  margin: 1.5vmin;
+  border-bottom: 1px black solid;
+  background: black;
+  color: #2AA252;
+}
+
+.menuIcon {
+  height: 10vmax;
+}
+
+a, i {
+  color: #2AA252;
+}
+
+.hamburger, .menuIcon {
+  margin: 0vmin 4vmin;
+}
