@@ -162,6 +162,8 @@ h2 {
   padding: 2vmin;
   margin: 2vmin;
   text-align: center;
+  border-top: 3px solid #5A8639;
+  border-bottom: 3px solid #5A8639;
 }
 
 footer {
@@ -170,4 +172,15 @@ footer {
   padding: 1vh;
   margin: 2vh;
   font-size: small
+}
+
+.card {
+  border: 2px solid #5A8639;
+}
+
+.pSection {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }

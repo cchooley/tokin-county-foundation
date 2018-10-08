@@ -6,23 +6,3 @@ $app-dashboard-top-nav-height: rem-calc(55);
   flex: 0 0 $app-dashboard-top-nav-height;
 }
 
-.topnav {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-}
-
-.mNav {
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-}
-.social {
-  background: black;
-}
-
-i {
-  color: #5A8639;
-  padding: 1vh;
-  font-size: 1.5vmax;
-}
