@@ -5,28 +5,11 @@ meta-title: Dashboard
   <img src="../assets/img/TC-1.jpg" alt="TokinCounty">
 </section>
 <section>
-  <h2 id="products">Products</h2>
-  <div class="pSection">
-    <h3 id="sativa">Sativa</h3>
-    <div class="product section pSection">
-        <div class="small-7 columns">{{> slideshow}}</div>
-    </div>
-  </div>
-  <div class="pSection">
-    <h3 id="indica">Indica</h3>
-    <div class="product section pSection">
-      <div class="small-7 columns">{{> slideshow}}</div>
-    </div>
-  </div>
-  <div class="pSection">
-    <h3 id="hybrid">Hybrid</h3>
-    <div class="product section pSection">
-      <div class="small-7 columns">{{> slideshow}}</div>
-    </div>
-  </div>
+  <h2 class="bold" id="products">Products</h2>
+    {{> product_menus}}
 </section>
 <section>
-  <h2 id="merch">Merchandise</h2>
+  <h2 class="bold" id="merch">Merchandise</h3>
     <div class="row">
       <div class="medium-4 columns merchCard">{{> merch_card}}</div>
       <div class="medium-4 columns merchCard">{{> merch_card}}</div>
@@ -34,13 +17,13 @@ meta-title: Dashboard
     </div>
 </section>
 <section>
-  <h2 id="specials">Specials</h2>
+  <h2 class="bold" id="specials">Specials</h2>
   <div>
     {{> specials_card}}
   </div>
 </section>
 <section>
-  <h2 id="about">About Us</h2>
+  <h2 class="bold" id="about">About Us</h2>
   <div>
     {{> about}}
   </div>

@@ -106,7 +106,7 @@ function colorDate() {
   weekday[6] = "wknd";
   var n = weekday[d.getDay()]
   document.getElementById(n).style.color="green"
-  document.getElementById(n).style.outline="1px black solid"
+  document.getElementById(n).style.outline="1px green solid"
 }
 
 colorDate()

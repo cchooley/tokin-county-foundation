@@ -79,7 +79,7 @@ $app-dashboard-sidebar-width: $off-canvas-width;
   overflow-y: auto;
   flex: 1 1 0;
   padding: 20px;
-  background-color: $white;
+  background-color: lightgray;
 }
 
 @mixin shrunk-sidebar() {
@@ -146,24 +146,26 @@ $app-dashboard-sidebar-width: $off-canvas-width;
   margin: 40px;
 }
 
-#merch, #specials, #about {
-  // Only affects medium screens and larger
-  @include breakpoint(large down) {
-    // All CSS in here goes inside the media query
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-  }
-}
-
 h2 {
   background: black;
   color: white;
-  padding: 2vmin;
+  padding: 4vmin 0vmin 2vmin 0vmin;
   margin: 2vmin;
   text-align: center;
   border-top: 3px solid #5A8639;
   border-bottom: 3px solid #5A8639;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 5vh;
+}
+
+.menuHead {
+  padding: 4vmin 0vmin 2vmin 0vmin;
+  margin: 3vmin;
+  text-align: center;
+  border-top: 3px solid #5A8639;
+  border-bottom: 3px solid #5A8639;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 3.5vh;
 }
 
 footer {
@@ -200,6 +202,10 @@ footer {
   padding: 2.5vh 3.5vh
 }
 
+.special {
+  outline: black 1px solid;
+}
+
 .bold {
   font-weight: 700;
 }
@@ -220,4 +226,12 @@ footer {
   margin: 3vh 0vh;
 }
 
+.orbit-previous, .orbit-next {
+  color: black;
+}
+
+.orbit-container {
+  margin: 0px 10vw;
+  height: 60vh;
+}
 // 5B8A3C, 979694, 98E6B4, black, white
