@@ -3,10 +3,13 @@
     <h4><i class="fas fa-phone"></i>  720.692.1539</h4>
     <h4><i class="fas fa-map-marker-alt"></i>  3819 Quentin St. Denver, CO 80239
     <div id="googleMap"></div>
+    <iframe width='100%' height='640' allowfullscreen src='https://tourmkr.com/G1unaHJ62q/7376490p,2744489m,49.26h,85.74t'></iframe>
 </section>
 <div>{{> social}}</div>
+<div>{{> gallery}}</div>
 
-<script class="aSection">
+
+<script>
     function myMap() {
         var myLatLng = {lat: 39.770100, lng: -104.845130}
         var mapProp = {
@@ -21,6 +24,15 @@
             title: 'Tokin\' County',
             icon: image
         });
+        var panorama = new google.maps.StreetViewPanorama(
+            document.getElementById('map'), {
+                position: myLatLng,
+                pov: { heading: 300, pitch: 0 },
+                motionTrackingControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+            });
+        map.setStreetView(panorama);
     }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGhip0kEAil0pnIgVUOiqgEPAdHH07cE&callback=myMap"></script>
