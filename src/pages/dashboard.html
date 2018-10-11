@@ -4,32 +4,26 @@ meta-title: Dashboard
 <section>
   <img src="../assets/img/TC-1.jpg" alt="TokinCounty">
 </section>
-
 <section>
-
   <h2 id="products">Products</h2>
-
   <div class="pSection">
     <h3 id="sativa">Sativa</h3>
     <div class="product section pSection">
         <div class="small-7 columns">{{> slideshow}}</div>
     </div>
   </div>
-
   <div class="pSection">
     <h3 id="indica">Indica</h3>
     <div class="product section pSection">
       <div class="small-7 columns">{{> slideshow}}</div>
     </div>
   </div>
-
   <div class="pSection">
     <h3 id="hybrid">Hybrid</h3>
     <div class="product section pSection">
       <div class="small-7 columns">{{> slideshow}}</div>
     </div>
   </div>
-
 </section>
 <section>
   <h2 id="merch">Merchandise</h2>
@@ -41,23 +35,14 @@ meta-title: Dashboard
 </section>
 <section>
   <h2 id="specials">Specials</h2>
-      <div class="row">
-        <div class="small-6 columns">{{> specials_card}}</div>
-        <div class="small-6 columns">{{> specials_card}}</div>
-      </div>
-      <div class="row">
-        <div class="small-6 columns">{{> specials_card}}</div>
-        <div class="small-6 columns">{{> specials_card}}</div>
-      </div>
-      <div class="row">
-        <div class="small-6 columns">{{> specials_card}}</div>
-        <div class="small-6 columns">{{> specials_card}}</div>
-      </div>
+  <div>
+    {{> specials_card}}
+  </div>
 </section>
 <section>
   <h2 id="about">About Us</h2>
-    <div>
-      {{> about}}
-    </div>
+  <div>
+    {{> about}}
+  </div>
 </section>
 {{> footer}}
