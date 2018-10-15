@@ -89,15 +89,11 @@ var TablesawConfig = {
   swipeHorizontalThreshold: 15
 };
 
-// app dashboard toggle
-$('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
-  e.preventDefault();
-  $(this).parents('.app-dashboard').toggleClass('shrink-medium').toggleClass('shrink-large');
-});
 
 function colorDate() {
   var d = new Date()
-  var weekday = new Array(6)
+  var weekday = new Array(7)
+  weekday[0] = "wknd";
   weekday[1] = "mon";
   weekday[2] = "tues";
   weekday[3] = "wed";
@@ -110,3 +106,12 @@ function colorDate() {
 }
 
 colorDate()
+
+document.getElementById("viewSwitch").addEventListener("click", toggle, false);
+
+function toggle() {
+  var map = document.getElementById('as1');
+  var store = document.getElementById('as2');
+  map.style.display = (map.style.display == 'none') ? 'block' : 'none';
+  store.style.display = (store.style.display == 'block') ? 'none' : 'block';
+}
