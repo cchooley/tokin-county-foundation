@@ -112,6 +112,8 @@ document.getElementById("viewSwitch").addEventListener("click", toggle, false);
 function toggle() {
   var map = document.getElementById('as1');
   var store = document.getElementById('as2');
+  var text = document.getElementById('toggleText');
   map.style.display = (map.style.display == 'none') ? 'block' : 'none';
   store.style.display = (store.style.display == 'block') ? 'none' : 'block';
+  text.innerText = (map.style.display == 'none') ? 'Store View' : 'Map View';
 }
