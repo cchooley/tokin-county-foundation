@@ -149,22 +149,24 @@ $app-dashboard-sidebar-width: $off-canvas-width;
 h2 {
   background: black;
   color: white;
-  padding: 4vmin 0vmin 2vmin 0vmin;
+  padding: 2vmin 0vmin;
   margin: 2vmin;
   text-align: center;
   border-top: 3px solid #5A8639;
   border-bottom: 3px solid #5A8639;
-  font-family: 'Luckiest Guy', cursive;
+  font-family: sans-serif;
+  font-weight: 100;
   font-size: 5vh;
 }
 
 .menuHead {
-  padding: 4vmin 0vmin 2vmin 0vmin;
+  padding: 2vmin 0vmin;
   margin: 3vmin;
   text-align: center;
-  border-top: 3px solid #5A8639;
-  border-bottom: 3px solid #5A8639;
-  font-family: 'Luckiest Guy', cursive;
+  border-top: 2px solid #5A8639;
+  border-bottom: 2px solid #5A8639;
+  font-family: sans-serif;
+  font-weight: 100;
   font-size: 3.5vh;
 }
 
@@ -176,6 +178,17 @@ footer {
   font-size: small;
   display: flex;
   flex-flow: row;
+}
+
+.welcome {
+  font-family: sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+.green {
+  color: #5A8639;
+  font-weight: 600;
 }
 
 .card {
