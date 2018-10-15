@@ -182,7 +182,7 @@ footer {
 
 .welcome {
   font-family: sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   text-align: center;
 }
 
@@ -200,6 +200,13 @@ footer {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+}
+
+.tabs {
+  margin: 0;
+  border-bottom: 1px solid grey;
+  background: #fefefe;
+  list-style-type: none;
 }
 
 .small {
