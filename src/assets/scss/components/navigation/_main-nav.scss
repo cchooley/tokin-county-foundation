@@ -1,10 +1,11 @@
 $app-dashboard-top-nav-height: rem-calc(55);
 
-.app-dashboard-top-nav-bar  {
-  height: $app-dashboard-top-nav-height;
-  width: 100%;
-  flex: 0 0 $app-dashboard-top-nav-height;
-}
+// .app-dashboard-top-nav-bar  {
+//   height: $app-dashboard-top-nav-height;
+//   width: 100%;
+//   flex: 0 0 $app-dashboard-top-nav-height;
+//   position: sticky;
+// }
 
 .topNav {
   display: flex;
@@ -13,6 +14,7 @@ $app-dashboard-top-nav-height: rem-calc(55);
   border-bottom: 3px white solid;
   background: black;
   color: #2AA252;
+
 }
 
 .menuIcon {
@@ -26,3 +28,4 @@ a, i {
 .hamburger, .menuIcon {
   margin: 0vmin 4vmin;
 }
+

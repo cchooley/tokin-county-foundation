@@ -142,6 +142,25 @@ $app-dashboard-sidebar-width: $off-canvas-width;
   }
 }
 
+.index-menu {
+  background: black;
+}
+
+.indexBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.indexButtons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.white {
+  color: white;
+}
+
 h2 {
   background: black;
   color: white;
@@ -181,7 +200,7 @@ h2 {
 }
 
 .green {
-  color: #5A8639;
+  color: #2AA252;
   font-weight: 600;
 }
 
@@ -218,6 +237,10 @@ h2 {
   list-style-type: none;
 }
 
+.big {
+  font-size: x-large;
+  font-weight: 300
+}
 .small {
   font-size: smaller;
 }
@@ -244,14 +267,14 @@ h2 {
 }
 
 #googleMap {
-  outline: 1px green solid;
+  outline: 1px #2AA252 solid;
   width: 100%;
   height: 51vmax;
   margin-top: 4vh;
 }
 
 iframe {
-  outline: 1px green solid;
+  outline: 1px #2AA252 solid;
   width: 100%;
   height: 50vmax;
   margin-top: 4vh;
@@ -300,6 +323,22 @@ iframe {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0vmin 5vmin;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2vh;
+    border-top: 3px solid white;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialFoot {
+    font-size: 8vmin;
 }
 
 // 5B8A3C, 979694, 98E6B4, black, white
