@@ -190,13 +190,13 @@ h2 {
 }
 
 .indexSection {
-  padding: 2vh 1vw;
+  padding: 2vmin 5vmin;
 }
 
 .welcomeContainer {
   display: flex;
   flex-flow: column;
-  margin-bottom: 2.5vh;
+  margin: 2.5vh 0vh;
 }
 
 .green {
@@ -335,10 +335,28 @@ footer {
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    height: 8vmax;
 }
 
 .socialFoot {
     font-size: 8vmin;
+    text-align: center;
+}
+
+th {
+  text-align: center;
+  font-size: 2vmax;
+}
+
+td {
+  font-size: 1.75vmax;
+  font-weight: 350;
+}
+
+#product-tabs {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
 }
 
 // 5B8A3C, 979694, 98E6B4, black, white
